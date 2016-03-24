@@ -52,15 +52,37 @@ html, body {
   margin: 10px;  
   padding: 0;
   width: 200px;
-  height: 300px;
+  height: 200px;
   border: 1px solid #B6CDF2;
   float: left;
+  text-align: center;
 }
 
 .item:hover {
   background: #D2E2FC; 
   text-decoration: none;
   transition: background 500ms;
+
+}
+
+.pokemon-image {
+}
+
+.pokemon-name {
+  font-weight: bold;
+}
+
+.pokemon-type{
+  margin: 4px;
+  padding: 4px;
+  background: #D2E2FC;
+  float: left;
+  border: 1px solid #B6CDF2;
+}
+
+img {
+  b order: 1px solid #B6CDF2;
+  margin: 10px;
 }
 
 .details {
