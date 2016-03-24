@@ -11,7 +11,7 @@ html, body {
   border: 1px solid #B6CDF2;
   text-align: left;
   max-width: 1280px;
-  d isplay: block;
+  /*display: block;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,19 +32,19 @@ html, body {
 
 .left-part{
   background: #D2FCD7;
-  b order: 1px solid #B6CDF2;
+  /*border: 1px solid #B6CDF2;*/
 }
 
 .right-part{
   float: right;
-  b order: 1px solid #B6CDF2;
-  b ackground: #D2FCD7;
-  w idth: 400px;
+  /*border: 1px solid #B6CDF2;*/
+  /*background: #D2FCD7;*/
+  /*width: 400px;*/
   height: 100%;
 }
 
 .list{
-  ove rflow: auto;
+  /*overflow: auto;*/
 }
 
 .item {
@@ -81,7 +81,7 @@ html, body {
 }
 
 img {
-  b order: 1px solid #B6CDF2;
+  /*border: 1px solid #B6CDF2;*/
   margin: 10px;
 }
 
