@@ -24,14 +24,14 @@
 							<img ng-src="http://pokeapi.co/media/img/{{poke.pkdx_id}}.png">										</div>
 						<div class="pokemon-name">{{poke.name}}</div>
 						<div class="pokemon-types">
-							<div ng-repeat="type in poke.types" class="pokemon-type">{{type.name}}</div>
+                                                    <div ng-repeat="type in poke.types" class="pokemon-type" style="background: {{typeColor(type.name)}}">{{type.name}}</div>
 						</div>
 					</div>
 				</div>
 			</div>
 	
 		</div>
-		<div class="footer">footer</div>
+		<div class="footer">Author: Konstantin Kuribko (made for Kottans)</div>
 	</div>
 
 

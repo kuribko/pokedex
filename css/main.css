@@ -66,6 +66,8 @@ html, body {
 }
 
 .pokemon-image {
+    height: 120px;
+
 }
 
 .pokemon-name {
@@ -75,9 +77,10 @@ html, body {
 .pokemon-type{
   margin: 4px;
   padding: 4px;
-  background: #D2E2FC;
+  /*background: #D2E2FC;*/
   float: left;
   border: 1px solid #B6CDF2;
+  border-radius: 5px;
 }
 
 img {
@@ -97,4 +100,5 @@ img {
   width: 100%;
   font-size: 8pt;
   background: #B6CDF2;
+  text-align: right;
 }
