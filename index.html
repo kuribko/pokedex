@@ -16,12 +16,13 @@
 		<div id="main" ng-controller="PokemonController">
 		
 			<div id="right-part">
-				<div class="details">Pokemon detaled view</div>
+				<div class="details">Pokemon detaled view<br>Pokemon id: {{selectedPokemon}}</div>
+                                
 			</div>
 
 			<div id="left-part">
 				<div class="list">					
-					<div class="item" ng-repeat="poke in pokemons.objects">
+					<div class="item" ng-repeat="poke in pokemons.objects" ng-click="selectPokemon(poke.pkdx_id)">
 						<div class="pokemon-image">
 							<img ng-src="{{pokemonImage(poke.pkdx_id)}}">										</div>
 						<div class="pokemon-name">{{poke.name}}</div>

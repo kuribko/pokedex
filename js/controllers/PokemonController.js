@@ -37,4 +37,9 @@ app.controller('PokemonController', ['$scope', 'pokemons', function ($scope, pok
 //      return 'http://pokeapi.co/media/img/'+id+'.png';
             return 'img/favicon.png';
         }
+        
+        $scope.selectPokemon = function(id){
+            console.log("pokemon selected: "+id);
+            $scope.selectedPokemon = "this is pokemon from controller";
+        };
     }]);
