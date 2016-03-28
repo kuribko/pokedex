@@ -25,7 +25,7 @@
                         <table class="details-table">
                             <tr>
                                 <td class="details-name">Type</td>
-                                <td class="details-value"><span ng-repeat="type in selectedPokemon.types">{{type.name}},</span></td>
+                                <td class="details-value"><span ng-repeat="type in selectedPokemon.types">{{type.name}}{{$last ? '' : ', '}}</span></td>
                             </tr>
                             <tr>
                                 <td class="details-name">Attack</td>
