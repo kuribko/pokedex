@@ -1,4 +1,4 @@
-app.factory('pokemons', ['$http', function($http){
+app.factory('pokemonsService', ['$http', function($http){
 	return $http.get('http://pokeapi.co/api/v1/pokemon/?limit=12')
 		.success(function(data){
 			return data;
