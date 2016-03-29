@@ -6,19 +6,19 @@
     div{
         font-size: 6pt;
     }
+
+    .details {
+        /*background: #FCECD2;*/
+        width: 100px;
+    }
 }
 
-/*@media screen and (max-device-width: 1204px) {*/
-    /*body {*/
-        /*font-size: 12pt;*/
-    /*}*/
-/*}*/
-
-/*@media screen and (max-device-width: 1980px) {*/
-    /*body {*/
-        /*font-size: 16pt;*/
-    /*}*/
-/*}*/
+@media screen and (max-device-width: 1980px) {
+    .details {
+        /*background: #FCECD2;*/
+        width: 200px;
+    }
+}
 
 html, body {
     font-family: Arial, sans-serif;
@@ -133,7 +133,7 @@ img {
 
 .details {
     /*background: #FCECD2;*/
-    width: 200px;
+    /*width: 200px;*/
     /*height: 500px;*/
     margin: 10px;
     text-align: center;
