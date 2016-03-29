@@ -1,6 +1,8 @@
+var chunkSize = 10;
+
 app.controller('PokemonController', ['$scope', 'pokemonsService', '$http', function ($scope, pokemonsService, $http) {
 
-    $scope.listSize = 6;
+    $scope.listSize = chunkSize;
 
     var loadPokemons = function () {
         pokemonsService.getPokemons($scope.listSize).success(function (data) {
@@ -48,7 +50,7 @@ app.controller('PokemonController', ['$scope', 'pokemonsService', '$http', funct
 
     $scope.selectPokemon = function (id) {
         console.log("pokemon selected: " + id);
-
+        $scope.selectedPokemon = {};
         $http({
             method: 'GET',
             url: 'http://pokeapi.co/api/v1/pokemon/' + id
@@ -64,7 +66,7 @@ app.controller('PokemonController', ['$scope', 'pokemonsService', '$http', funct
     };
 
     $scope.loadMore = function () {
-        $scope.listSize += 6;
+        $scope.listSize += chunkSize;
         loadPokemons();
     }
 }]);

@@ -1,5 +1,4 @@
 html, body {
-    /*background: #fff;*/
     font-family: Arial, sans-serif;
     margin: 10px;
     padding: 0; 
@@ -45,7 +44,7 @@ html, body {
 #left-part{
     /*background: #D2FCD7;*/
     /*border: 1px solid #B6CDF2;*/
-    margin-right: 330px;
+    margin-right: 230px;
     min-height: 400px;
 }
 
@@ -62,13 +61,14 @@ html, body {
 
 .item {
     cursor: pointer;
-    margin: 10px;  
+    margin: 20px;
     padding: 0;
-    width: 200px;
+    width: 150px;
     height: 200px;
     border: 1px solid #B6CDF2;
     float: left;
     text-align: center;
+    background: #DEF0FF;
 }
 
 .item:hover {
@@ -78,11 +78,21 @@ html, body {
 }
 
 .pokemon-image {
-    height: 120px;
+    height: 130px;
+    width: 130px;
+    border: 1px solid #B6CDF2;
+    background: white;
+    /*background: lightcoral;*/
+    margin: 8px;
 }
 
 .pokemon-name {
-    font-weight: bold;    
+    font-weight: bold;
+}
+
+.pokemon-types{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .pokemon-type{
@@ -97,17 +107,19 @@ html, body {
 
 img {
     /*border: 1px solid #B6CDF2;*/
-    margin: 10px;
+    /*margin: 10px;*/
 }
 
 .details {
     /*background: #FCECD2;*/
-    width: 300px;
+    width: 200px;
     /*height: 500px;*/
     margin: 10px;
     text-align: center;
     border: 1px solid #B6CDF2;
     padding: 8px;
+
+    background: #DEF0FF;
 }
 
 .details-table{
@@ -116,18 +128,20 @@ img {
     width: 100%;
     background: #B6CDF2;
     /*color: black;*/
-    border-spacing: 1px;    
+    border-spacing: 1px;
 }
 
 .details-name{
     background: white;
-    padding: 5px;
-    width: 40%;
+    padding: 2px;
+    width: 50%;
+    font-size: 10pt;
 }
 
 .details-value{
     background: white;
-    padding: 5px;
+    padding: 2px;
+    font-size: 10pt;
 }
 
 #load-more-button {
