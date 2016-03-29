@@ -3,16 +3,7 @@
         font-size: 6pt;
     }
 
-    .details-name {
-        background: lightskyblue;
-        padding: 2px;
-        width: 50%;
-        font-size: 6pt;
-    }
-
-    .details-value {
-        background: lightskyblue;
-        padding: 2px;
+    div{
         font-size: 6pt;
     }
 }
