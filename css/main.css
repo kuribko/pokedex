@@ -1,9 +1,9 @@
 html, body {
     font-family: Arial, sans-serif;
     margin: 10px;
-    padding: 0; 
-    text-align: center; 
-    font-family: Geneva, Arial, Helvetica, sans-serif;
+    padding: 0;
+    text-align: center;
+    /*font-family: Geneva, Arial, Helvetica, sans-serif;*/
     background: #DEF0FF;
 }
 
@@ -11,52 +11,46 @@ html, body {
     border: 1px solid #B6CDF2;
     text-align: left;
     max-width: 1000px;
-    /*display: block;*/
     margin-left: auto;
     margin-right: auto;
     background: white;
 }
 
 #main {
-    width: 100%;  
+    width: 100%;
 }
 
 #header {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    /*height: 50px;*/
     width: 100%;
-    /*background: #B6CDF2;*/
     text-align: center;
     font-size: 20pt;
-    margin-bottom: 20px;
     font-weight: bold;
 
     background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee', GradientType=0); /* IE6-9 */
 
 }
 
-#left-part{
+#left-part {
     /*background: #D2FCD7;*/
     /*border: 1px solid #B6CDF2;*/
     margin-right: 230px;
     min-height: 400px;
 }
 
-#right-part{
-    position:absolute;
-    top:112px;
+#right-part {
+    position: absolute;
+    top: 112px;
 }
 
-.list{
-    /*overflow: auto;*/
-    /*border:1px solid #000;*/
-    /*overflow:hidden;*/
+.list {
+
 }
 
 .item {
@@ -64,25 +58,26 @@ html, body {
     margin: 20px;
     padding: 0;
     width: 150px;
-    height: 200px;
-    border: 1px solid #B6CDF2;
+    height: 220px;
+    /*border: 1px solid #B6CDF2;*/
+    border: 1px solid #DEF0FF;
     float: left;
     text-align: center;
-    background: #DEF0FF;
+    /*background: #DEF0FF;*/
 }
 
 .item:hover {
     background: #B5DEFF;
     text-decoration: none;
     transition: background 500ms;
+    border: 1px solid #B6CDF2;
 }
 
 .pokemon-image {
     height: 130px;
     width: 130px;
-    border: 1px solid #B6CDF2;
-    background: white;
-    /*background: lightcoral;*/
+    /*border: 1px solid #B6CDF2;*/
+    /*background: white;*/
     margin: 8px;
 }
 
@@ -90,19 +85,18 @@ html, body {
     font-weight: bold;
 }
 
-.pokemon-types{
+.pokemon-types {
     margin-left: 8px;
     margin-right: 8px;
 }
 
-.pokemon-type{
+.pokemon-type {
     margin: 4px;
     padding: 4px;
-    /*background: #D2E2FC;*/
     float: left;
     border: 1px solid lightgray;
     border-radius: 5px;
-    font-size: 10pt;
+    /*font-size: 10pt;*/
 }
 
 img {
@@ -113,7 +107,6 @@ img {
 .details {
     /*background: #FCECD2;*/
     width: 200px;
-    /*height: 500px;*/
     margin: 10px;
     text-align: center;
     border: 1px solid #B6CDF2;
@@ -122,7 +115,7 @@ img {
     background: #DEF0FF;
 }
 
-.details-table{
+.details-table {
 
     /*border: 1px solid #B6CDF2;*/
     width: 100%;
@@ -131,17 +124,17 @@ img {
     border-spacing: 1px;
 }
 
-.details-name{
+.details-name {
     background: white;
     padding: 2px;
     width: 50%;
-    font-size: 10pt;
+    /*font-size: 10pt;*/
 }
 
-.details-value{
+.details-value {
     background: white;
     padding: 2px;
-    font-size: 10pt;
+    /*font-size: 10pt;*/
 }
 
 #load-more-button {
@@ -162,12 +155,70 @@ img {
     transition: background 500ms;
 }
 
-.footer{
-    clear: both;		
+.footer {
+    clear: both;
     width: 100%;
     font-size: 8pt;
     background: #B5DEFF;
     text-align: right;
     padding-top: 4px;
     padding-bottom: 4px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 6pt;
+    }
+
+    div{
+        font-size: 6pt;
+    }
+
+    #header {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 10pt;
+    }
+
+    .details {
+        /*width: 100px;*/
+        width: 95%;
+        margin: 1px;
+        padding: 1px;
+    }
+
+    .item {
+        margin: 4px;
+        /*width: 120px;*/
+        width: 100%;
+        height: 170px;
+        /*background: red;*/
+    }
+
+    .list{
+        /*background: green;*/
+    }
+
+    .pokemon-image {
+        height: 110px;
+        /*width: 90px;*/
+        width: 100%;
+        text-align: center;
+        margin: 4px;
+    }
+
+    #left-part {
+        /*margin-right: 140px;*/
+        margin-right: 50%;
+        min-height: 400px;
+        width: 55%;
+        /*background: gray;*/
+
+    }
+
+    #right-part {
+        top: 60px;
+        width: 35%;
+        /*background: yellow;*/
+    }
 }
