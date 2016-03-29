@@ -106,7 +106,7 @@ img {
 
 .details {
     /*background: #FCECD2;*/
-    /*width: 200px;*/
+    width: 200px;
     margin: 10px;
     text-align: center;
     border: 1px solid #B6CDF2;
@@ -165,7 +165,7 @@ img {
     padding-bottom: 4px;
 }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 700px) {
     body {
         font-size: 6pt;
     }
@@ -176,13 +176,23 @@ img {
 
     .details {
         /*background: #FCECD2;*/
-        width: 80px;
+        width: 100px;
     }
-}
 
-@media screen and (max-device-width: 1980px) {
-    .details {
-        /*background: #FCECD2;*/
-        width: 200px;
+    .item {
+        margin: 5px;
+        width: 120px;
+        height: 170px;
+    }
+
+    .pokemon-image {
+        height: 110px;
+        width: 90px;
+        margin: 4px;
+    }
+
+    #left-part {
+        margin-right: 140px;
+        min-height: 400px;
     }
 }
