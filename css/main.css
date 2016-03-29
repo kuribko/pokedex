@@ -1,4 +1,4 @@
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-device-width: 800px) {
     body {
         font-size: 6pt;
     }
@@ -9,7 +9,7 @@
 
     .details {
         /*background: #FCECD2;*/
-        width: 100px;
+        width: 80px;
     }
 }
 
@@ -33,7 +33,6 @@ html, body {
     border: 1px solid #B6CDF2;
     text-align: left;
     max-width: 1000px;
-    /*display: block;*/
     margin-left: auto;
     margin-right: auto;
     background: white;
@@ -47,9 +46,7 @@ html, body {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    /*height: 50px;*/
     width: 100%;
-    /*background: #B6CDF2;*/
     text-align: center;
     font-size: 20pt;
     font-weight: bold;
@@ -75,9 +72,7 @@ html, body {
 }
 
 .list {
-    /*overflow: auto;*/
-    /*border:1px solid #000;*/
-    /*overflow:hidden;*/
+
 }
 
 .item {
@@ -103,7 +98,6 @@ html, body {
     width: 130px;
     border: 1px solid #B6CDF2;
     background: white;
-    /*background: lightcoral;*/
     margin: 8px;
 }
 
@@ -119,7 +113,6 @@ html, body {
 .pokemon-type {
     margin: 4px;
     padding: 4px;
-    /*background: #D2E2FC;*/
     float: left;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -134,7 +127,6 @@ img {
 .details {
     /*background: #FCECD2;*/
     /*width: 200px;*/
-    /*height: 500px;*/
     margin: 10px;
     text-align: center;
     border: 1px solid #B6CDF2;
