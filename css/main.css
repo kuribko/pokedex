@@ -49,6 +49,11 @@ html, body {
     top: 112px;
 }
 
+#pokemon-filter{
+    padding: 20px;
+    text-align: right;
+}
+
 .list {
 
 }

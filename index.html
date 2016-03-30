@@ -69,8 +69,11 @@
         </div>
 
         <div id="left-part">
+            <div id="pokemon-filter">
+                Filter by type <select ng-model="selectedPokemonType" ng-change="filterByType()" ng-options="opt as opt.name for opt in pokemonTypes"></select>
+            </div>
             <div class="list">
-                <div class="item" ng-repeat="poke in pokemons.objects" ng-click="onSelectPokemon(poke.pkdx_id)">
+                <div class="item" ng-repeat="poke in getPokemons()" ng-click="onSelectPokemon(poke.pkdx_id)">
                     <div class="pokemon-image">
                         <img ng-src="{{getPokemonImage(poke.pkdx_id)}}">
                     </div>
@@ -101,5 +104,6 @@
 
 <!-- Services -->
 <script src="js/services/pokemonsService.js"></script>
+<script src="js/services/typeService.js"></script>
 </body>
 </html>
