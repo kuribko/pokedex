@@ -1,2 +1,2 @@
 # pokedex
-This is a Pkedex project for Kottans
+This is a Pokedex project for Kottans.
