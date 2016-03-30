@@ -3,12 +3,26 @@ var chunkSize = 10;
 app.controller('PokemonController', ['$scope', 'pokemonsService', '$http', function ($scope, pokemonsService, $http) {
 
     $scope.listSize = chunkSize;
-
+    var isLoadingData = false;
     var loadPokemons = function () {
-        pokemonsService.getPokemons($scope.listSize).success(function (data) {
+        if(isLoadingData){
+            return;
+        }
+        isLoadingData = true;
+        var $button = $('#load-more-button');
+        $button.toggleClass('loading');
+        $button.text('Loading...');
+        var onLoadCallback = function(){
+            isLoadingData = false;
+            $button.toggleClass('loading');
+            $button.text('Load More');
+        }
+
+        pokemonsService.getPokemons($scope.listSize, onLoadCallback).success(function (data) {
             $scope.pokemons = data;
         });
     }
+
     loadPokemons();
 
     //$scope.pokemons = {objects: [
@@ -36,19 +50,19 @@ app.controller('PokemonController', ['$scope', 'pokemonsService', '$http', funct
     //    ]};
 
 
-    $scope.typeColor = function (typeName) {
+    $scope.getColorOfType = function (typeName) {
         var colors = ['#E16B66', '#A3C98E', '#AF95BB', '#F7D367'];
         return colors[typeName.length % 4];
     };
 
-    $scope.pokemonImage = function (id) {
+    $scope.getPokemonImage = function (id) {
         return 'http://pokeapi.co/media/img/' + id + '.png';
         //return 'img/favicon.png';
     }
 
     $scope.selectedPokemon = {image: ''};
 
-    $scope.selectPokemon = function (id) {
+    $scope.onSelectPokemon = function (id) {
         console.log("pokemon selected: " + id);
         $scope.selectedPokemon = {};
         $http({
@@ -62,7 +76,7 @@ app.controller('PokemonController', ['$scope', 'pokemonsService', '$http', funct
 
         //$scope.selectedPokemon = $scope.pokemons.objects[id];
 
-        $scope.selectedPokemon.image = $scope.pokemonImage(id);
+        $scope.selectedPokemon.image = $scope.getPokemonImage(id);
     };
 
     $scope.loadMore = function () {

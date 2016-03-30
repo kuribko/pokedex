@@ -150,6 +150,11 @@ img {
     cursor: pointer;
 }
 
+#load-more-button.loading, #load-more-button.loading:hover {
+    background: lightgray;
+    cursor: default;
+}
+
 #load-more-button:hover {
     background: #35A3FC;
     transition: background 500ms;
