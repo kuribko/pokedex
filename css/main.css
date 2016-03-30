@@ -49,6 +49,11 @@ html, body {
     top: 112px;
 }
 
+#pokemon-filter{
+    padding: 20px;
+    text-align: right;
+}
+
 .list {
 
 }
@@ -148,6 +153,11 @@ img {
     border-radius: 5px;
     margin: 10px;
     cursor: pointer;
+}
+
+#load-more-button.loading, #load-more-button.loading:hover {
+    background: lightgray;
+    cursor: default;
 }
 
 #load-more-button:hover {
