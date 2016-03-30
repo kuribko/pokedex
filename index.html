@@ -70,7 +70,7 @@
 
         <div id="left-part">
             <div class="list">
-                <div class="item" ng-repeat="poke in pokemons.objects" ng-click="selectPokemon(poke.pkdx_id)">
+                <div class="item" ng-repeat="poke in pokemons.objects" ng-click="onSelectPokemon(poke.pkdx_id)">
                     <div class="pokemon-image">
                         <img ng-src="{{getPokemonImage(poke.pkdx_id)}}">
                     </div>

@@ -64,7 +64,7 @@ app.controller('PokemonController', ['$scope', 'pokemonsService', '$http', funct
 
     $scope.onSelectPokemon = function (id) {
         console.log("pokemon selected: " + id);
-        $scope.selectedPokemon = {};
+        $scope.selectedPokemon = {name: "Loading..."};
         $http({
             method: 'GET',
             url: 'http://pokeapi.co/api/v1/pokemon/' + id
