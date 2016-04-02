@@ -1,9 +1,8 @@
-html, body {
+body {
     font-family: Arial, sans-serif;
     margin: 10px;
     padding: 0;
-    text-align: center;
-    /*font-family: Geneva, Arial, Helvetica, sans-serif;*/
+    font-family: Geneva, Arial, Helvetica, sans-serif;
     background: #DEF0FF;
 }
 
@@ -42,17 +41,21 @@ html, body {
 #left-part {
     /*background: #D2FCD7;*/
     /*border: 1px solid #B6CDF2;*/
-    margin-right: 230px;
+    /*margin-right: 230px;*/
     min-height: 600px;
+    width: 77%;
+    /*width: 600px;*/
+    /*background: green;*/
 }
 
 #right-part {
     position: absolute;
     top: 124px;
-    width: 220px;
+    /*width: 220px;*/
+    width: 20%;
 }
 
-#filter{
+#filter {
     text-align: right;
     border: 1px solid #B6CDF2;
     background: #DEF0FF;
@@ -158,6 +161,7 @@ img {
     border-radius: 5px;
     margin: 10px;
     cursor: pointer;
+    width: 100%;
 }
 
 #load-more-button.loading, #load-more-button.loading:hover {
@@ -178,7 +182,7 @@ img {
 
 }
 
-#footer-text{
+#footer-text {
     font-size: 8pt;
     padding: 4px;
 }
@@ -186,6 +190,7 @@ img {
 @media screen and (max-width: 700px) {
     body {
         font-size: 6pt;
+        margin: 0px;
     }
 
     #header {
@@ -196,10 +201,10 @@ img {
     }
 
     #details {
-        /*width: 100px;*/
+        width: 100px;
         /*width: 95%;*/
-        margin: 1px;
-        padding: 1px;
+        margin: 1px 10px 0px 1px;
+        padding: 2px;
         font-size: 8pt;
     }
 
@@ -208,8 +213,8 @@ img {
     }
 
     .item {
-        margin: 4px;
-        width: 100%;
+        margin: 10px;
+        width: 90%;
         height: 170px;
     }
 
@@ -218,8 +223,8 @@ img {
         font-size: 12pt;
     }
 
-    #list{
-        margin-top: 0px;
+    #list {
+
     }
 
     .pokemon-image {
@@ -230,19 +235,26 @@ img {
     }
 
     #left-part {
-        margin-right: 50%;
+        /*margin-right: 50%;*/
         min-height: 600px;
-        width: 55%;
+        width: 50%;
+        /*background: green;*/
     }
 
     #right-part {
-        top: 52px;
-        width: 35%;
+        top: 38px;
+        width: 50%;
     }
 
-    #filter{
+    #filter {
         padding: 2px;
         font-size: 8pt;
-        margin:1px 1px 6px 1px;
+        margin: 1px 10px 6px 1px;
+    }
+
+    #load-more-button {
+        /*width: 90%;*/
+        /*padding: 0px;*/
+        display: inline-block;
     }
 }
