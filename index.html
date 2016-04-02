@@ -18,13 +18,17 @@
     <div id="main" ng-controller="PokemonController">
 
         <div id="right-part">
-            <div class="details">
+            <div id="filter">
+                Filter by type <select ng-model="selectedPokemonType" ng-change="filterByType()" ng-options="opt as opt.name for opt in pokemonTypes"></select>
+            </div>
+
+            <div id="details">
                 <div class="details-image">
                     <img ng-src="{{selectedPokemon.image}}">
                 </div>
 
                 <div class="pokemon-name">{{selectedPokemon.name}}</div>
-                <table class="details-table">
+                <table id="details-table">
                     <tr>
                         <td class="details-name">Type</td>
                         <td class="details-value"><span ng-repeat="type in selectedPokemon.types">{{type.name}}{{$last ? '' : ', '}}</span>
@@ -69,10 +73,7 @@
         </div>
 
         <div id="left-part">
-            <div id="pokemon-filter">
-                Filter by type <select ng-model="selectedPokemonType" ng-change="filterByType()" ng-options="opt as opt.name for opt in pokemonTypes"></select>
-            </div>
-            <div class="list">
+            <div id="list">
                 <div class="item" ng-repeat="poke in getPokemons()" ng-click="onSelectPokemon(poke.pkdx_id)">
                     <div class="pokemon-image">
                         <img ng-src="{{getPokemonImage(poke.pkdx_id)}}">
@@ -92,7 +93,7 @@
         </div>
 
     </div>
-    <div class="footer">Author: Konstantin Kuribko (made for Kottans)</div>
+    <div id="footer"><span id="footer-text">Author: Konstantin Kuribko (made for Kottans)</span></div>
 </div>
 
 
