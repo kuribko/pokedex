@@ -58,12 +58,12 @@ app.controller('PokemonController', ['$scope', 'pokemonsService', 'typeService',
     $scope.getPokemons = function () {
         if ($scope.selectedPokemonType === typeAll) {
             console.log('Showing all pokemons');
-            adaptBW();
+            //adaptBW();
             return pokemons;
         } else {
             var selectedTypeName = $scope.selectedPokemonType.name.toLowerCase();
             console.log('Showing "' + selectedTypeName + '" pokemons');
-            adaptBW();
+            //adaptBW();
             return filterByType(pokemons, $scope.selectedPokemonType);
             //var result = [];
             //for (var i in pokemons) {
