@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 10px;
     padding: 0;
     font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -13,7 +12,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     background: white;
-    /*background: #EDF7FF;*/
 }
 
 #main {
@@ -39,45 +37,35 @@ body {
 }
 
 #left-part {
-    /*background: #D2FCD7;*/
-    /*border: 1px solid #B6CDF2;*/
     margin-right: 230px;
     min-height: 400px;
-    /*width: 77%;*/
-    /*width: 600px;*/
-    /*background: green;*/
-    /*float: left;*/
 }
 
 #right-part {
     position: absolute;
     top: 112px;
     width: 220px;
-    /*width: 20%;*/
-    /*float: right;*/
 }
 
 #filter {
     text-align: right;
     border: 1px solid #B6CDF2;
     background: #DEF0FF;
-    /*margin: 20px 10px 10px 10px;*/
     margin: 0px 10px 10px 0px;
     padding: 10px;
+    font-size: 10pt;
 }
 
 #list {
-    /*margin-top: 20px;*/
+
 }
 
 .item {
     cursor: pointer;
     margin: 10px;
     padding: 0;
-    /*width: 165px;*/
     width: calc(100% / 4 - 20px - 2px);
     height: 180px;
-    /*border: 1px solid #B6CDF2;*/
     border: 1px solid #B6CDF2;
     float: left;
     text-align: center;
@@ -99,10 +87,6 @@ body {
 
 .pokemon-image {
     height: 120px;
-    /*width: 130px;*/
-    /*border: 1px solid #B6CDF2;*/
-    /*background: white;*/
-    /*margin: 8px;*/
 }
 
 .pokemon-name {
@@ -124,15 +108,7 @@ body {
     /*font-size: 10pt;*/
 }
 
-img {
-    /*border: 1px solid #B6CDF2;*/
-    /*margin: 10px;*/
-}
-
 #details {
-    /*background: #FCECD2;*/
-    /*width: 200px;*/
-    /*margin: 10px;*/
     text-align: center;
     border: 1px solid #B6CDF2;
     padding: 4px;
@@ -142,7 +118,6 @@ img {
 }
 
 #details-table {
-    /*border: 1px solid #B6CDF2;*/
     width: 100%;
     background: #B6CDF2;
     border-spacing: 1px;
@@ -173,9 +148,6 @@ img {
     width: 100%;
 
     width: calc(100% - 20px - 16px);
-    /*-webkit-box-sizing: border-box;*/
-    /*-moz-box-sizing: border-box;*/
-    /*box-sizing: border-box;*/
 }
 
 #load-more-button.loading, #load-more-button.loading:hover {
@@ -215,8 +187,6 @@ img {
     }
 
     #details {
-        /*width: 100px;*/
-        /*width: 95%;*/
         margin: 1px 10px 0px 1px;
         padding: 2px;
         font-size: 8pt;
@@ -228,11 +198,9 @@ img {
 
     .item {
         margin: 10px;
-        /*width: 90%;*/
         width: calc(100% - 20px - 2px);
         height: 170px;
     }
-
 
     .pokemon-name {
         font-weight: bold;
@@ -251,10 +219,8 @@ img {
     }
 
     #left-part {
-        /*margin-right: 50%;*/
         min-height: 400px;
         width: 50%;
-        /*background: green;*/
     }
 
     #right-part {
@@ -269,8 +235,6 @@ img {
     }
 
     #load-more-button {
-        /*width: 90%;*/
-        /*padding: 0px;*/
         display: inline-block;
     }
 }

@@ -1,4 +1,4 @@
-app.factory('typeService', ['$http', function ($http) {
+app.factory('TypesService', ['$http', function ($http) {
 
     return $http.get('http://pokeapi.co/api/v1/type/?limit=999')
         .success(function (data) {
@@ -6,7 +6,7 @@ app.factory('typeService', ['$http', function ($http) {
             return data;
         })
         .error(function (err) {
-            console.error('Error while loading pokemon types' + err);
+            console.error('Error while loading pokemon types: ' + err);
             return err;
         });
 }]);
