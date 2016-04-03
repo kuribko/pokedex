@@ -7,6 +7,7 @@ Features:
 - Pokemon details panel moves while scrolling the page.
 - Adaptive styling.
 - Filtering by pokemon type. If no new data is loaded after clicking ‘Load More’ button a meesage is showing suggesting to load more or switch to 'All types'.
+- ‘Load More’ button is disabled while loading new chunk of data.
 
 The app is also running on github-pages: http://kuribko.github.io/pokedex/
 
