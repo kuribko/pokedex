@@ -41,18 +41,20 @@ body {
 #left-part {
     /*background: #D2FCD7;*/
     /*border: 1px solid #B6CDF2;*/
-    /*margin-right: 230px;*/
-    min-height: 600px;
-    width: 77%;
+    margin-right: 230px;
+    min-height: 400px;
+    /*width: 77%;*/
     /*width: 600px;*/
     /*background: green;*/
+    /*float: left;*/
 }
 
 #right-part {
     position: absolute;
-    top: 124px;
-    /*width: 220px;*/
-    width: 20%;
+    top: 112px;
+    width: 220px;
+    /*width: 20%;*/
+    /*float: right;*/
 }
 
 #filter {
@@ -70,15 +72,22 @@ body {
 
 .item {
     cursor: pointer;
-    margin: 12px;
+    margin: 10px;
     padding: 0;
-    width: 165px;
+    /*width: 165px;*/
+    width: calc(100% / 4 - 20px - 2px);
     height: 180px;
     /*border: 1px solid #B6CDF2;*/
     border: 1px solid #B6CDF2;
     float: left;
     text-align: center;
     background: #DEF0FF;
+}
+
+@media screen and (max-width: 1000px) {
+    .item {
+        width: calc(100% / 3 - 20px - 2px);
+    }
 }
 
 .item:hover {
@@ -162,6 +171,11 @@ img {
     margin: 10px;
     cursor: pointer;
     width: 100%;
+
+    width: calc(100% - 20px - 16px);
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
 }
 
 #load-more-button.loading, #load-more-button.loading:hover {
@@ -214,9 +228,11 @@ img {
 
     .item {
         margin: 10px;
-        width: 90%;
+        /*width: 90%;*/
+        width: calc(100% - 20px - 2px);
         height: 170px;
     }
+
 
     .pokemon-name {
         font-weight: bold;
@@ -236,7 +252,7 @@ img {
 
     #left-part {
         /*margin-right: 50%;*/
-        min-height: 600px;
+        min-height: 400px;
         width: 50%;
         /*background: green;*/
     }

@@ -1,6 +1,6 @@
 var adaptBW = function(){
     var listWidth = parseInt($('#list').css('width'));
-    var itemWidth = parseInt($('.item').css('width'))-1;//+parseInt($('.item').css('borderTopWidth'))*2;
+    var itemWidth = parseInt($('.item').css('width'));//+parseInt($('.item').css('borderTopWidth'))*2;
     //console.log("item border: "+);
     var itemMargin = parseInt($('.item').css('margin'));
     var itemsInRow = (listWidth - listWidth % (itemWidth+itemMargin*2)) / (itemWidth+itemMargin*2);
