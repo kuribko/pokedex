@@ -4,7 +4,6 @@ app.factory('PokemonsService', ['$http', function ($http) {
         getPokemons: function (onLoaded) {
             return $http.get(nextChunkUrl)
                 .success(function (data) {
-                    //console.log('Loaded');
                     onLoaded();
                     nextChunkUrl = 'http://pokeapi.co'+data.meta.next;
                     console.log('Pokemons loaded. Next chunk: '+nextChunkUrl);
