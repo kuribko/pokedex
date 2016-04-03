@@ -1,9 +1,8 @@
 var floatingPanel = "#right-part";
 var parent = "#main";
-var offsetFromBottom = 0;
 
 $(document).ready(function () {
-    var panelTop = parseInt($(floatingPanel).css("top"));//.substring(0,$(name).css("top").indexOf("px")));
+    var panelTop = parseInt($(floatingPanel).css("top"));
     $(window).scroll(function () {
         var newPanelTop = panelTop + $(document).scrollTop();
         $(floatingPanel).animate({top: newPanelTop + "px"}, {duration: 200, queue: false});

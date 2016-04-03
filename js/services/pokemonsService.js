@@ -1,5 +1,5 @@
-app.factory('pokemonsService', ['$http', function ($http) {
-    var nextChunkUrl = 'http://pokeapi.co/api/v1/pokemon/?limit=' + 8;
+app.factory('PokemonsService', ['$http', function ($http) {
+    var nextChunkUrl = 'http://pokeapi.co/api/v1/pokemon/?limit=' + 12;
     return {
         getPokemons: function (onLoaded) {
             return $http.get(nextChunkUrl)
@@ -11,7 +11,7 @@ app.factory('pokemonsService', ['$http', function ($http) {
                     return data;
                 })
                 .error(function (err) {
-                    console.error('Error while loading pokemons'+err);
+                    console.error('Error while loading pokemons: '+err);
                     return err;
                 });
         }
