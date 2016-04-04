@@ -67,9 +67,11 @@ app.controller('PokemonController', ['$scope', 'PokemonsService', 'TypesService'
 
     };
 
-    $scope.getColorOfType = function (typeName) {
-        var colors = ['#E16B66', '#A3C98E', '#AF95BB', '#F7D367'];
-        return colors[typeName.length % 4];
+    $scope.getClassOfType = function (typeName) {
+        //var colors = ['#E16B66', '#A3C98E', '#AF95BB', '#F7D367'];
+        //return colors[typeName.length % 4];
+        var classes = ['type1', 'type2', 'type3', 'type4'];
+        return classes[typeName.length % 4];
     };
 
     $scope.getPokemonImage = function (id) {

@@ -79,8 +79,7 @@
                     </div>
                     <div class="pokemon-name">{{poke.name}}</div>
                     <div class="pokemon-types">
-                        <div ng-repeat="type in poke.types" class="pokemon-type"
-                             style="background: linear-gradient(to top, {{getColorOfType(type.name)}}, {{getColorOfType(type.name)}}, white)">
+                        <div ng-repeat="type in poke.types" class="pokemon-type {{getClassOfType(type.name)}}">
                             {{type.name}}
                         </div>
                     </div>
