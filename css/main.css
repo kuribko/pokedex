@@ -185,7 +185,6 @@ body {
     width: 100%;
     background: #B5DEFF;
     text-align: right;
-
 }
 
 #footer-text {
@@ -219,7 +218,7 @@ body {
     .item {
         margin: 10px;
         width: calc(100% - 20px - 2px);
-        height: 170px;
+        height: 180px;
     }
 
     .pokemon-name {
