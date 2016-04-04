@@ -18,7 +18,7 @@
 
         <div id="right-part">
             <div id="filter">
-                Filter by type <select ng-model="selectedPokemonType" ng-change="filterByType()" ng-options="opt as opt.name for opt in pokemonTypes"></select>
+                Filter by type <select id="filter-dropdown" ng-model="selectedPokemonType" ng-change="filterByType()" ng-options="opt as opt.name for opt in pokemonTypes"></select>
             </div>
 
             <div id="details">

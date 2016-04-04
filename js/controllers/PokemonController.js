@@ -83,11 +83,13 @@ app.controller('PokemonController', ['$scope', 'PokemonsService', 'TypesService'
     $scope.onSelectPokemon = function (id) {
         console.log("pokemon selected: " + id);
         $scope.selectedPokemon = {name: "Loading..."};
+        $('#details-table').addClass('hide');
         $http({
             method: 'GET',
             url: 'http://pokeapi.co/api/v1/pokemon/' + id
         }).then(function successCallback(response) {
             $scope.selectedPokemon = response.data;
+            $('#details-table').removeClass('hide');
         }, function errorCallback(response) {
             $scope.selectedPokemon = response;
         });
