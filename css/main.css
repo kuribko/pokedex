@@ -105,7 +105,23 @@ body {
     float: left;
     border: 1px solid lightgray;
     border-radius: 5px;
-    /*font-size: 10pt;*/
+    font-size: 10pt;
+}
+
+.type1{
+    background: linear-gradient(to top, #E16B66, #E16B66, white);
+}
+
+.type2{
+    background: linear-gradient(to top, #A3C98E, #A3C98E, white);
+}
+
+.type3{
+    background: linear-gradient(to top, #AF95BB, #AF95BB, white);
+}
+
+.type4{
+    background: linear-gradient(to top, #F7D367, #F7D367, white);
 }
 
 #details {
