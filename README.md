@@ -1,6 +1,7 @@
 # pokedex
-This is a Pokedex project - a client for http://pokeapi.co/
 *Test Task #1 for Kottans (by Konstantin Kuribko)*
+
+Pokedex project is a client for [pokeapi.co](http://pokeapi.co/)
 
 **Features:**
 - On click of ‘Load More’ button another chunk of the list is being loaded and displayed on the page.
